@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Movies API</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading text-success text-center mt-5">MOVIES</h1>
+            <input class="movies_input form-control w-50 mx-auto mt-5" type="search" placeholder="movies">
+            <form class="form">
+            <select class="type_select form-control w-50 mx-auto mt-3" name="type_select">
+                <option value="">Film Types</option>
+                <option value="movie">Movies</option>
+                <option value="series">Series</option>
+            </select>
+            <button class="search-btn btn btn-success mt-3 d-block mx-auto" type="submit">Search</button>
+        </form>
+    </div>
+    <ul class="movies-list"></ul>
+    <template class="template">
+        <li class="movies_item">
+            <h3 class="heading_film">title</h3>
+            <p class="year">2021</p>
+            <p class="type">series</p>
+            <img class="film_img"
+                src="https://m.media-amazon.com/images/M/MV5BNTkwOTE1ZDYtODQ3Yy00YTYwLTg0YWQtYmVkNmFjNGZlYmRiXkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_SX300.jpg"
+                alt="heading_film" width="315" height="400">
+
+        </li>
+    </template>
+    <div class="box_btn  d-flex align-items-center justify-content-center">
+        <button class="old_page btn btn-success">Prev</button>
+        <button class="new_page btn btn-success">Next</button>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
